@@ -11,7 +11,7 @@ export function AboutAuthor() {
                         <div className="author-avatar">
                             <span>AO</span>
                         </div>
-                        <div className="author-tag">Physics Graduate · Author · Mentor</div>
+                        <div className="author-tag">Physicist · Author · Mentor</div>
                     </div>
                     <div className="author-text">
                         <p className="section-eyebrow">About the Author</p>
@@ -19,8 +19,8 @@ export function AboutAuthor() {
                         <p>
                             Quantum is a Physics graduate based in Adikpo, Benue State, with
                             hands-on experience in medical imaging — working in X-ray and
-                            ultrasound environments at St. Monica's Hospital. He is a
-                            graphics designer, front-end web developer, and the founder of
+                            ultrasound environments at St. Monica's Hospital. He is a Physicist, writer
+                            ,front-end web developer, and the founder of
                             <strong> Quantum TechBridge</strong>, a smartphone-first digital
                             skills training initiative in Adikpo.
                         </p>

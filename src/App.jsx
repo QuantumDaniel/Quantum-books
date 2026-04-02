@@ -7,7 +7,7 @@ import { AboutAuthor } from "./components/AboutAuthor";
 import { Testimonials } from "./components/Testimonials";
 import { FinalCTA } from "./components/FinalCTA";
 import { Footer } from "./components/Footer";
-import Contact from "./components/contact";
+
 
 
 
@@ -21,7 +21,6 @@ export default function App() {
       <AboutAuthor />
       <Testimonials />
       <FinalCTA />
-      <Contact />
       <Footer />
     </div>
   );

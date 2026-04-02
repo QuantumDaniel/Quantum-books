@@ -18,11 +18,29 @@ export function Hero() {
                 <p className="hero-sub">
                     Stop letting confusion, pressure, and guesswork decide your career.
                     This book gives Nigerian secondary school students a clear, honest, and
-                    practical roadmap — from self-discovery to career choice to JAMB and
+                    practical roadmap-from self-discovery to career choice to JAMB and
                     beyond.
                 </p>
                 <div className="hero-actions">
-                    <div className="fre" style={{ display: 'inline' }}>  <a target="blank" href="https://1drv.ms/w/c/d6a759a2a54357fd/IQBXejPp00toRqJ9NaKBXOz2AUEcOJOfK6gpap7g1ruZkss" className="btn btn-success rounded-4 text-center" style={{ width: '220px', height: '40px' }}>Free Chapter</a></div>
+                    <div className="fre">  <a target="blank" href="https://1drv.ms/w/c/d6a759a2a54357fd/IQBXejPp00toRqJ9NaKBXOz2AUEcOJOfK6gpap7g1ruZkss" className="btn btn-success rounded-4 text-center" style={{ width: '220px', height: '40px' }}>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Download Free Chapter
+
+                    </a></div>
                     <BuyButton />
                     <span className="hero-price-note">One-time payment · Instant PDF download</span>
 
@@ -30,7 +48,7 @@ export function Hero() {
 
                 <div className="hero-social-proof">
                     <div className="proof-faces">
-                        {["B", "E", "C", "T"].map((l, i) => (
+                        {["Q", "U", "A", "N", "T", "U", "M"].map((l, i) => (
                             <div key={i} className="proof-face" style={{ background: ["#c8a96e", "#4a7c59", "#2d5fa6", "#8b3a3a"][i] }}>
                                 {l}
                             </div>

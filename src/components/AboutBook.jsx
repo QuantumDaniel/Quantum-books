@@ -33,7 +33,7 @@ export function AboutBook() {
                     </div>
                     <div className="about-stats">
                         {[
-                            { num: "6+", label: "Core Chapters" },
+                            { num: "10+", label: "Core Chapters" },
                             { num: "100%", label: "Nigeria-focused" },
                             { num: "PDF", label: "Instant Access" },
                             { num: "₦3500", label: "One-time Price" },
