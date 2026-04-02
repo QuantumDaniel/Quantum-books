@@ -60,7 +60,7 @@ export function Hero() {
             <div className="hero-book-visual">
                 <div className="book-3d">
                     <div className="book-front">
-                        <img src={coverPage} alt="" />
+                        <img src={coverPage} alt="" loading="lazy" />
 
                     </div>
                     <div className="book-spine" />
