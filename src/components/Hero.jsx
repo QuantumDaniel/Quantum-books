@@ -1,6 +1,6 @@
 import { BuyButton } from "./BuyButton";
 import { BOOK_PRICE } from "../config/constants";
-
+import coverPage from "../assets/252bd609512ac0a9.png"
 export function Hero() {
     return (
         <section className="hero">
@@ -60,7 +60,7 @@ export function Hero() {
             <div className="hero-book-visual">
                 <div className="book-3d">
                     <div className="book-front">
-                        <img src="/252bd609512ac0a9.png" alt="" />
+                        <img src={coverPage} alt="" />
 
                     </div>
                     <div className="book-spine" />
