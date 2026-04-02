@@ -77,7 +77,7 @@ export function Navbar() {
                         <li className="nav-item dropdown">
                             <a
                                 className="nav-link dropdown-toggle nav-animated"
-                                href="/free_chapter_preview.docx"
+                                href="/free_chapter_preview(1).pdf"
                                 id="navbarDropdown"
                                 download="Don't-Guess-Your-future-By-Abur-Orhembaga-Daniel"
                                 role="button"
