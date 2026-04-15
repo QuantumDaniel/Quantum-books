@@ -56,7 +56,7 @@ const Videos = () => {
                                 style={{ maxHeight: "520px", objectFit: "cover", display: "block" }}
                                 poster="/images/hospital-poster.jpg" /* Replace with your poster image */
                             >
-                                <source src="/video2.mp4" />
+                                <source src="/video1.mp4" />
                                 Your browser does not support the video tag.
                             </video>
 
