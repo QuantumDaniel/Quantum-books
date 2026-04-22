@@ -1,14 +1,37 @@
 import { useReveal } from "../hooks/useReveal";
+import { useState, useEffect, useRef } from "react";
 import { BuyButton } from "./BuyButton";
 import { BOOK_PRICE } from "../config/constants";
+import './AboutBook.css';
 
 export function AboutBook() {
     const [ref, visible] = useReveal();
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setShow(true);
+
+                    // ✅ stop observing after this card shows
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0 } // ✅ less sensitive trigger
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <section className="about-book section" ref={ref} id="about">
             <div className={`section-inner fade-up ${visible ? "visible" : ""}`}>
-                <div className="about-grid">
+                <div className={`about-grid  projects ${show ? 'show' : ''}`} ref={ref}>
                     <div className="about-text">
                         <p className="section-eyebrow">About the Book</p>
                         <h2 className="section-title">Written for the student who's been told what to do — but never why.</h2>

@@ -1,11 +1,13 @@
 
 import './Videos.css';
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 const Videos = () => {
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [isMuted, setIsMuted] = useState(false);
+
+
 
     const togglePlay = () => {
         if (videoRef.current.paused) {
@@ -23,10 +25,33 @@ const Videos = () => {
     };
 
     const handleVideoEnd = () => setIsPlaying(false);
+    const ref = useRef(null);
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setShow(true);
+
+                    // ✅ stop observing after this card shows
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0 } // ✅ less sensitive trigger
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
 
     return (
         <section className="quantum-video-section py-5">
-            <div className="container">
+            <div className={`container projects ${show ? 'show' : ''}`} ref={ref}>
                 {/* Section Header */}
                 <div className="row justify-content-center mb-4">
                     <div className="col-lg-8 text-center">
