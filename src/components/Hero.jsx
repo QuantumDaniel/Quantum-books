@@ -23,7 +23,7 @@ export function Hero() {
                 </p>
                 <div className="hero-actions">
                     <div className="fre">
-                        <a target="blank" href="/free_chapter_preview(1).pdf" className="btn btn-success rounded-4 text-center" style={{ width: '220px', height: '40px' }} download="Dont-guess-your-future">
+                        <a target="blank" href="/free_chapter_preview.pdf" className="btn btn-success rounded-4 text-center" style={{ width: '220px', height: '40px' }} download="Dont-guess-your-future">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="20"
