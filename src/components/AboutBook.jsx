@@ -36,7 +36,7 @@ export function AboutBook() {
                             { num: "10+", label: "Core Chapters" },
                             { num: "100%", label: "Nigeria-focused" },
                             { num: "PDF", label: "Instant Access" },
-                            { num: "₦3500", label: "One-time Price" },
+                            { num: "₦3000", label: "One-time Price" },
                         ].map(({ num, label }) => (
                             <div className="stat-card" key={label}>
                                 <span className="stat-num">{num}</span>

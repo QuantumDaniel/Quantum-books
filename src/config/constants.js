@@ -1,5 +1,5 @@
 export const PAYSTACK_LINK = "https://paystack.com/pay/YOUR_LINK_HERE";
-export const BOOK_PRICE = "₦3500";
+export const BOOK_PRICE = "₦3000";
 
 export const lessons = [
     {
