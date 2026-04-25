@@ -15,6 +15,7 @@ export function WhatYoullLearn() {
 
                     // ✅ stop observing after this card shows
                     observer.unobserve(entry.target);
+                    
                 }
             },
             { threshold: 0 } // ✅ less sensitive trigger

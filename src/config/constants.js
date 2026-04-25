@@ -1,4 +1,4 @@
-export const PAYSTACK_LINK = "https://paystack.com/pay/YOUR_LINK_HERE";
+export const PAYSTACK_LINK = "https://selar.com/7y5226h424";
 export const BOOK_PRICE = "₦3000";
 
 export const lessons = [
